@@ -1,0 +1,11 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+#contenedor{
+    width: 78%;
+    max-width: 960px;
+    padding: 1.8rem;
+    background-color: aqua;
+
+}
