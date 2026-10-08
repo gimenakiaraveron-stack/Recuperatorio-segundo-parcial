@@ -1,4 +1,5 @@
 body{
+    background-image: url(../img/fondo.png);
     display: flex;
     justify-content: center;
 }
