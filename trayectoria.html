@@ -28,15 +28,41 @@
             <section>
                 <h2>El espectador como protagonista</h2>
                 <p>En la obra de Rafael Lozano-Hemmer, el espectador ocupa un rol central.<br>Las piezas están diseñadas para activarse únicamente a través de la participación, lo que transforma la experiencia artística en un proceso compartido.<br>Esta participación redefine la relación tradicional entre obra y público. </p>
+                <img src="img/lozano-hemmer-3.jpg" alt="obras de rafael lozano-hemmer">
             </section>
             <section>
+
                 <h2>Espacio público y experiencia colectiva</h2>
-                <p>Mucha de sus intalaciones se desarrollan en espacios urbanos, lo que permite ampliar el alcance del arte más allá de los ámbito tradicionales.<br>Estas intervenciones transforman el paisaje cotidiano en un entorno de experimentación.<br>El carácter colectivo de estas obras genera experiencias compartidas entre desconocidos, promoviendo nuevas forma de interacción social.<br>El espacio público se convierte así en un lugar de encuentro donde arte, tecnología y comunidad se entrelazan.</p>
+                <p>Muchas de sus intalaciones se desarrollan en espacios urbanos, lo que permite ampliar el alcance del arte más allá de los ámbito tradicionales.<br>Estas intervenciones transforman el paisaje cotidiano en un entorno de experimentación.<br>El carácter colectivo de estas obras genera experiencias compartidas entre desconocidos, promoviendo nuevas forma de interacción social.<br>El espacio público se convierte así en un lugar de encuentro donde arte, tecnología y comunidad se entrelazan.</p>
             </section>
+            <section id="sistema-luces">
+                <h2>Sistema de control de luces móviles</h2>
+                <p>Ingresá la cantidad de obras que querés registrar. 
+                    Después va a completar los datos de cada obra.
+                </p>
+                <form id="formulario-cantidad">
+                <label for="cantidad-obras">Cantidad de obras:</label>
+                <input type="number" id="cantidad-obras" min="1"required>
+                <button type="submit" id="preparar-obras">Preparar obras</button>
+                </form>
+                <form id="formulario-obras">
+                    <div id="datos-obras"></div>
+                    <button type="submit" id="calcular" disabled>calcular resultados</button>
+                </form>
+                <section id="resultados">
+                    <h3>Resultados</h3>
+                    <p id="consumo-total"></p>
+                    <p id="consumo-promedio"></p>
+                    <p id="obra-mayor-tiempo"></p>
+                    <p id="porcentaje-obras"></p>
+                    <button  type="button"  id="reiniciar" disabled>Reiniciar</button>
+                </section>
+                </section>
         </main>
         <footer>
             <address><p>Para contactarse escribir a <a href="mailto: rafael@artedigital.com"> rafael@artedigital.com</a></p></address>
         </footer>
         </div>
+        <script src="js/luces.js"></script>
     </body>
 </html>

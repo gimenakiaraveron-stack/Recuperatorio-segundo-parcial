@@ -9,3 +9,152 @@ body{
     padding: 1.8rem;
     background-color: aqua;
 }
+img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+header{
+    padding: 22px;
+    text-align: center;
+    color: white;
+    background: #153b50;
+    border-radius: 12px;
+}
+header h1{
+    margin-top: 0;
+    font-size: 2.5rem;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav a{
+    display: block;
+    padding: 9px 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid white;
+    border-radius: 999px;
+}
+nav a:hover{
+    color: #153b50;
+    background: #9ce7df;
+}
+/*tres columnas*/
+main{
+    display: grid;
+    grid-template-columns: repeat(3,minimo(0,1fr));
+    margin: 24px 0;
+}
+main > section{
+    min-width: 0;
+    padding: 22px;
+    background: white;
+    border: 1px solid #d4e2e8;
+    border-top: 5px solid #168c91;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(21,59,80,0.09);
+}
+h2{
+    margin-top: 0;
+    color: #145568;
+    font-size: 1.25rem;
+}
+p{
+    margin-bottom: 14px;
+}
+li{
+    margin-bottom: 6px;
+}
+footer{
+    padding: 18px;
+    color: white;
+    background: #153b50;
+    border-radius: 12px;
+}
+footer address{
+    font-style: normal;
+    overflow-wrap: anywhere;
+}
+/*Estilos del sistema interactivo*/
+#sistema-luces{
+    display: block;
+    grid-column: 1/-1;
+    padding: 24px;
+    background:#edf7f8;
+    border: 24px solid #168c91;
+    border-radius: 14px;
+}
+.formulario-luces, #formulario-obra{
+    display: grid;
+}
+.grupo-campos{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+}
+.campo{
+    display: flex;
+    flex-direction: column;
+}
+.campo labe{
+    font-weight: 600;
+}
+.campo input{
+    width: 100%;
+    padding: 10px 12px;
+    font: inherit;
+    border: 1px salid #9bb8c1;
+    border-radius: 8px;
+}
+button{
+    width: fit-content;
+    padding: 10px 17px;
+    font: inherit;
+    font-weight: 700;
+    color: white;
+    background: #146b76;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:hover:not(:disabled){
+    background: #0d4d59;
+
+}
+button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.obras-cargada,#resultados-luces{
+    margin-top: 14px;
+    padding: 18px;
+    background: white;
+    border-radius: 10px;
+}
+#mensaje-luces{
+    min-height: 1.5rem;
+    font-weight: 600;
+}
+/*tablets*/
+@media (max-width:850px){
+    mai{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+}
+main {
+    grid-template-columns: 1fr;
+}
+.grupo-campos{
+    grid-template-columns: 1fr;
+}
+nav ul {
+    flex-direction: column;
+}
+nav a{
+    text-align: center;
+}
